@@ -1,8 +1,8 @@
 var express=require('express');
 var app=express();
 
-app.get('',function(req,res){
-    res.send("<h1>Hello Express<h1>")
+app.get('/',function(req,res){
+    res.sendfile(__dirname + '/home.html');
 })
 
-app.listen(8080)
+app.listen(80)
